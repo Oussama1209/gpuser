@@ -1,0 +1,565 @@
+<robot name="Little" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <!-- Base link -->
+    <link name="base"> 
+        <visual>
+        <origin rpy="0 0 0"  xyz="0 0 0"/>
+        <geometry>
+            <box size="0.01 0.01 0.01"/>
+        </geometry>
+        </visual> 
+        <collision> 
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+            <box size="0.01 0.01 0.01"/>
+        </geometry>
+        </collision> 
+        <inertial> 
+        <origin rpy="0 0 0" xyz="0.0 0.0 -0.007254554153074242"/>
+        <mass value="0.45920933447722356"/>
+        <inertia ixx="1.551505197007708e-05" ixy="0" ixz="0" iyy="1.551505197007708e-05" iyz="0" izz="7.653488907953726e-06"/>
+        </inertial>
+    </link>
+
+    <link name="Robotis_6_12_assembly_plate_v1">
+        <inertial>
+            <origin xyz="-5.4854171630960545e-14 0.0014021907556116475 8.881784197001253e-18" rpy="0.0 0.0 0.0" />
+            <mass value="0.012672931372617087" />
+            <inertia ixx="3.1752672873820834e-06" iyy="1.4259594099035416e-05" izz="1.1103093733757842e-05" ixy="2.3170571356526633e-20" iyz="-6.882142696441277e-22" ixz="-4.468098796766434e-20" />
+        </inertial>
+        <visual name="Robotis_6_12_assembly_plate_v1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Robotis_6-12_assembly_plate_v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Robotis_6_12_assembly_plate_v1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Robotis_6-12_assembly_plate_v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="AX_12A_with_frames_v3">
+        <inertial>
+            <origin xyz="-0.01897503355625635 -0.007342393276266615 0.016888905476670286" rpy="0.0 -0.0 0.0" />
+            <mass value="0.05903809749160415" />
+            <inertia ixx="1.7877213917482352e-05" iyy="1.6161183183697767e-05" izz="1.1670562253208295e-05" ixy="-2.3296833028652692e-09" iyz="-3.460034847367231e-08" ixz="9.031262257938838e-09" />
+        </inertial>
+        <visual name="AX_12A_with_frames_v3_visual">
+            <origin xyz="-0.018999999992803416 -0.007999999999999998 0.03050000000719683" rpy="1.5707963267948966 -3.4694469519535984e-16 -3.141592653589793" />
+            <geometry>
+                <mesh filename="meshes/AX-12A_with_frames_v3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="AX_12A_with_frames_v3_collision">
+            <origin xyz="-0.018999999992803416 -0.007999999999999998 0.03050000000719683" rpy="1.5707963267948966 -3.4694469519535984e-16 -3.141592653589793" />
+            <geometry>
+                <mesh filename="meshes/AX-12A_with_frames_v3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="AX_12A_with_frames_v3_1">
+        <inertial>
+            <origin xyz="-0.019024966429350414 -0.007342393276266606 -0.016888905462276838" rpy="0.0 -0.0 0.0" />
+            <mass value="0.05903809749160415" />
+            <inertia ixx="1.7877213917482163e-05" iyy="1.616118318369789e-05" izz="1.167056225320824e-05" ixy="2.3296833028652692e-09" iyz="3.4600348473699414e-08" ixz="9.031262257945614e-09" />
+        </inertial>
+        <visual name="AX_12A_with_frames_v3_1_visual">
+            <origin xyz="-0.018999999992803336 -0.00799999999999999 -0.030499999992803326" rpy="-1.5707963267948966 -0.0 1.1896771892660296e-32" />
+            <geometry>
+                <mesh filename="meshes/AX-12A_with_frames_v3_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="AX_12A_with_frames_v3_1_collision">
+            <origin xyz="-0.018999999992803336 -0.00799999999999999 -0.030499999992803326" rpy="-1.5707963267948966 -0.0 1.1896771892660296e-32" />
+            <geometry>
+                <mesh filename="meshes/AX-12A_with_frames_v3_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Robotis_6_12_assembly_plate_v1_1">
+        <inertial>
+            <origin xyz="5.329070518200751e-17 -0.02362499999274846 -0.001402190748415202" rpy="0.0 -0.0 0.0" />
+            <mass value="0.012672931372617087" />
+            <inertia ixx="1.1103093733757845e-05" iyy="3.1752672873820834e-06" izz="1.4259594099035382e-05" ixy="4.5951537388545793e-20" iyz="1.8422966602781032e-20" ixz="-3.3881317890172014e-21" />
+        </inertial>
+        <visual name="Robotis_6_12_assembly_plate_v1_1_visual">
+            <origin xyz="3.552713678800501e-17 -0.023624999992803316 7.1964434411597725e-12" rpy="-1.5707963267948966 4.16333634234434e-16 -1.5707963267948966" />
+            <geometry>
+                <mesh filename="meshes/Robotis_6-12_assembly_plate_v1_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Robotis_6_12_assembly_plate_v1_1_collision">
+            <origin xyz="3.552713678800501e-17 -0.023624999992803316 7.1964434411597725e-12" rpy="-1.5707963267948966 4.16333634234434e-16 -1.5707963267948966" />
+            <geometry>
+                <mesh filename="meshes/Robotis_6-12_assembly_plate_v1_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="FP04_F2_v1">
+        <inertial>
+            <origin xyz="-0.012419886124713652 0.00799999999999831 2.2848573344794176e-06" rpy="0.0 -6.077163357286273e-64 3.3265311250063685e-111" />
+            <mass value="0.00823940368839425" />
+            <inertia ixx="3.250569845448674e-06" iyy="1.3852004129980506e-06" izz="3.6562288748807916e-06" ixy="-6.8846837952829524e-18" iyz="1.0503208545953323e-19" ixz="-1.773380343361455e-10" />
+        </inertial>
+        <visual name="FP04_F2_v1_visual">
+            <origin xyz="-0.027499999992803528 0.00799999999999999 -7.196709894685683e-12" rpy="3.1415926535897927 -1.8369701987210257e-16 1.5707963267948966" />
+            <geometry>
+                <mesh filename="meshes/FP04-F2_v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="FP04_F2_v1_collision">
+            <origin xyz="-0.027499999992803528 0.00799999999999999 -7.196709894685683e-12" rpy="3.1415926535897927 -1.8369701987210257e-16 1.5707963267948966" />
+            <geometry>
+                <mesh filename="meshes/FP04-F2_v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="spine_module_v3">
+        <inertial>
+            <origin xyz="-0.02039008289649659 -2.4448702360700403e-05 -0.019055679922420108" rpy="2.698802673467014e-79 -0.0 0.0" />
+            <mass value="0.0636543058786046" />
+            <inertia ixx="2.7613447334379833e-05" iyy="3.2886911845177364e-05" izz="1.2595625023474285e-05" ixy="2.349783456927501e-09" iyz="-4.374643680374066e-09" ixz="-2.466744244053985e-07" />
+        </inertial>
+        <visual name="spine_module_v3_visual">
+            <origin xyz="-0.020999999999999908 7.195885554089898e-12 1.788359729213873e-05" rpy="1.5707963267948966 -4.163336342344352e-16 1.5707963267948968" />
+            <geometry>
+                <mesh filename="meshes/spine_module_v3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="spine_module_v3_collision">
+            <origin xyz="-0.020999999999999908 7.195885554089898e-12 1.788359729213873e-05" rpy="1.5707963267948966 -4.163336342344352e-16 1.5707963267948968" />
+            <geometry>
+                <mesh filename="meshes/spine_module_v3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="spine_module_v3_1">
+        <inertial>
+            <origin xyz="-0.01907355992242012 -2.4448702360669872e-05 0.02039008289649659" rpy="0.0 -0.0 -8.537812827903545e-111" />
+            <mass value="0.0636543058786046" />
+            <inertia ixx="1.2595625023474258e-05" iyy="3.2886911845177906e-05" izz="2.761344733438081e-05" ixy="-4.374643680372372e-09" iyz="-2.34978345692496e-09" ixz="2.4667442440550694e-07" />
+        </inertial>
+        <visual name="spine_module_v3_1_visual">
+            <origin xyz="3.597292117518691e-09 7.1959166403345876e-12 0.020999999999999908" rpy="-3.141592653589793 -1.8369701987210253e-16 1.5707963267948961" />
+            <geometry>
+                <mesh filename="meshes/spine_module_v3_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="spine_module_v3_1_collision">
+            <origin xyz="3.597292117518691e-09 7.1959166403345876e-12 0.020999999999999908" rpy="-3.141592653589793 -1.8369701987210253e-16 1.5707963267948961" />
+            <geometry>
+                <mesh filename="meshes/spine_module_v3_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="spine_module_v3_2">
+        <inertial>
+            <origin xyz="-0.019073559922420175 -2.4448702360625186e-05 0.02039008289649659" rpy="0.0 -0.0 -8.53781282790351e-111" />
+            <mass value="0.0636543058786046" />
+            <inertia ixx="1.2595625023474258e-05" iyy="3.288691184517769e-05" izz="2.7613447334381026e-05" ixy="-4.3746436803791485e-09" iyz="-2.349783456926654e-09" ixz="2.466744244053985e-07" />
+        </inertial>
+        <visual name="spine_module_v3_2_visual">
+            <origin xyz="3.5972920642279862e-09 7.195961049255573e-12 0.020999999999999908" rpy="-3.141592653589793 -1.836970198721025e-16 1.5707963267948961" />
+            <geometry>
+                <mesh filename="meshes/spine_module_v3_2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="spine_module_v3_2_collision">
+            <origin xyz="3.5972920642279862e-09 7.195961049255573e-12 0.020999999999999908" rpy="-3.141592653589793 -1.836970198721025e-16 1.5707963267948961" />
+            <geometry>
+                <mesh filename="meshes/spine_module_v3_2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="spine_module_v3_3">
+        <inertial>
+            <origin xyz="-0.014097554912526036 -2.7744149240027106e-05 0.020299396943195235" rpy="0.0 -0.0 0.0" />
+            <mass value="0.05541490219021035" />
+            <inertia ixx="9.341529750893438e-06" iyy="1.87028701197035e-05" izz="1.57039501993278e-05" ixy="-1.1547019254993558e-08" iyz="-2.221841522133645e-09" ixz="5.4181062787467434e-08" />
+        </inertial>
+        <visual name="spine_module_v3_3_visual">
+            <origin xyz="1.7887187387657376e-05 7.195175011354138e-12 0.020999999999999908" rpy="-3.141592653589793 -1.836970198721025e-16 1.5707963267948961" />
+            <geometry>
+                <mesh filename="meshes/spine_module_v3_3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="spine_module_v3_3_collision">
+            <origin xyz="1.7887187387657376e-05 7.195175011354138e-12 0.020999999999999908" rpy="-3.141592653589793 -1.836970198721025e-16 1.5707963267948961" />
+            <geometry>
+                <mesh filename="meshes/spine_module_v3_3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Robotis_6_12_assembly_plate_v1_2">
+        <inertial>
+            <origin xyz="-0.0015978120570005671 1.0658141036401502e-16 7.140340263500633e-12" rpy="0.0 -2.698802673467014e-79 0.0" />
+            <mass value="0.012672931372617087" />
+            <inertia ixx="1.4259594099035423e-05" iyy="1.1103093733758323e-05" izz="3.175267287382341e-06" ixy="-2.710505431213761e-20" iyz="-4.341043854678289e-20" ixz="1.8634724839594607e-20" />
+        </inertial>
+        <visual name="Robotis_6_12_assembly_plate_v1_2_visual">
+            <origin xyz="-0.0030000028126122304 9.769962616701378e-17 7.195194995368581e-12" rpy="-1.5707963267948966 -1.5707963267948961 0" />
+            <geometry>
+                <mesh filename="meshes/Robotis_6-12_assembly_plate_v1_2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Robotis_6_12_assembly_plate_v1_2_collision">
+            <origin xyz="-0.0030000028126122304 9.769962616701378e-17 7.195194995368581e-12" rpy="-1.5707963267948966 -1.5707963267948961 0" />
+            <geometry>
+                <mesh filename="meshes/Robotis_6-12_assembly_plate_v1_2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="AX_12A_with_frames_v3_2">
+        <inertial>
+            <origin xyz="-0.018975036376065263 -0.007342393276266517 0.016888905476668725" rpy="0.0 -0.0 0.0" />
+            <mass value="0.05903809749160415" />
+            <inertia ixx="1.7877213917482e-05" iyy="1.616118318369282e-05" izz="1.1670562253201545e-05" ixy="-2.3296833032582925e-09" iyz="-3.4600348473645204e-08" ixz="9.0312622574645e-09" />
+        </inertial>
+        <visual name="AX_12A_with_frames_v3_2_visual">
+            <origin xyz="-0.01900000281261221 -0.00799999999999991 0.030500000007195202" rpy="1.5707963267948963 -3.278102314169808e-47 3.141592653589793" />
+            <geometry>
+                <mesh filename="meshes/AX-12A_with_frames_v3_2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="AX_12A_with_frames_v3_2_collision">
+            <origin xyz="-0.01900000281261221 -0.00799999999999991 0.030500000007195202" rpy="1.5707963267948963 -3.278102314169808e-47 3.141592653589793" />
+            <geometry>
+                <mesh filename="meshes/AX-12A_with_frames_v3_2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="AX_12A_with_frames_v3_3">
+        <inertial>
+            <origin xyz="-0.019024969249159227 -0.0073423932762665435 -0.016888905462278347" rpy="0.0 -0.0 0.0" />
+            <mass value="0.05903809749160415" />
+            <inertia ixx="1.7877213917482e-05" iyy="1.6161183183697157e-05" izz="1.1670562253209352e-05" ixy="2.3296833032582925e-09" iyz="3.4600348473590994e-08" ixz="9.03126225811502e-09" />
+        </inertial>
+        <visual name="AX_12A_with_frames_v3_3_visual">
+            <origin xyz="-0.01900000281261221 -0.007999999999999927 -0.030499999992804817" rpy="-1.5707963267948963 -4.683003305956882e-48 -2.549308262712904e-32" />
+            <geometry>
+                <mesh filename="meshes/AX-12A_with_frames_v3_3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="AX_12A_with_frames_v3_3_collision">
+            <origin xyz="-0.01900000281261221 -0.007999999999999927 -0.030499999992804817" rpy="-1.5707963267948963 -4.683003305956882e-48 -2.549308262712904e-32" />
+            <geometry>
+                <mesh filename="meshes/AX-12A_with_frames_v3_3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Robotis_6_12_assembly_plate_v1_3">
+        <inertial>
+            <origin xyz="1.3322676295501878e-16 -0.023624999992749966 -0.0014021935682238507" rpy="0.0 -0.0 0.0" />
+            <mass value="0.012672931372617087" />
+            <inertia ixx="1.1103093733757672e-05" iyy="3.175267287382124e-06" izz="1.4259594099035409e-05" ixy="4.743384504624082e-20" iyz="2.286988957586611e-20" ixz="0.0" />
+        </inertial>
+        <visual name="Robotis_6_12_assembly_plate_v1_3_visual">
+            <origin xyz="1.2434497875801754e-16 -0.02362499999280482 -2.8126122231242333e-09" rpy="-1.5707963267948966 1.0927007713899343e-47 -1.5707963267948963" />
+            <geometry>
+                <mesh filename="meshes/Robotis_6-12_assembly_plate_v1_3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Robotis_6_12_assembly_plate_v1_3_collision">
+            <origin xyz="1.2434497875801754e-16 -0.02362499999280482 -2.8126122231242333e-09" rpy="-1.5707963267948966 1.0927007713899343e-47 -1.5707963267948963" />
+            <geometry>
+                <mesh filename="meshes/Robotis_6-12_assembly_plate_v1_3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="motor_leg_v3">
+        <inertial>
+            <origin xyz="-0.014573952871399993 -0.045572295808293285 -0.02100000759047993" rpy="0.0 -0.0 0.0" />
+            <mass value="0.20292153214135678" />
+            <inertia ixx="5.707812256140364e-05" iyy="7.188538072005828e-05" izz="9.123121451445546e-05" ixy="-1.3911254594372192e-06" iyz="-2.815718556752056e-11" ixz="-7.168171812415094e-11" />
+        </inertial>
+        <visual name="motor_leg_v3_visual">
+            <origin xyz="7.196581108814826e-12 -0.046500000007196764 -0.02099999999999998" rpy="1.5707963267948963 1.5707963267948963 0" />
+            <geometry>
+                <mesh filename="meshes/motor_leg_v3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="motor_leg_v3_collision">
+            <origin xyz="7.196581108814826e-12 -0.046500000007196764 -0.02099999999999998" rpy="1.5707963267948963 1.5707963267948963 0" />
+            <geometry>
+                <mesh filename="meshes/motor_leg_v3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="motor_leg_v3_1">
+        <inertial>
+            <origin xyz="0.014573950065984392 -0.04557229580829172 -0.020999992409519982" rpy="0.0 -0.0 0.0" />
+            <mass value="0.20292153214135678" />
+            <inertia ixx="5.707812256140407e-05" iyy="7.188538072006034e-05" izz="9.123121451445546e-05" ixy="1.3911254594370023e-06" iyz="2.8157185350680125e-11" ixz="-7.168171828678127e-11" />
+        </inertial>
+        <visual name="motor_leg_v3_1_visual">
+            <origin xyz="-2.8126122231242333e-09 -0.0465000000071952 -0.020999999999999942" rpy="1.5707963267948966 -1.5707963267948963 0" />
+            <geometry>
+                <mesh filename="meshes/motor_leg_v3_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="motor_leg_v3_1_collision">
+            <origin xyz="-2.8126122231242333e-09 -0.0465000000071952 -0.020999999999999942" rpy="1.5707963267948966 -1.5707963267948963 0" />
+            <geometry>
+                <mesh filename="meshes/motor_leg_v3_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="motor_leg_v3_2">
+        <inertial>
+            <origin xyz="-0.014573952871399114 0.04557229220380417 -0.020999992409520038" rpy="0.0 -0.0 0.0" />
+            <mass value="0.20292153214135678" />
+            <inertia ixx="5.7078122561403204e-05" iyy="7.18853807200585e-05" izz="9.123121451445546e-05" ixy="1.3911254594371108e-06" iyz="-2.815718513383969e-11" ixz="7.168171806994084e-11" />
+        </inertial>
+        <visual name="motor_leg_v3_2_visual">
+            <origin xyz="7.197482609910822e-12 0.04649999640270765 -0.020999999999999998" rpy="-1.5707963267948968 -1.5707963267948963 0" />
+            <geometry>
+                <mesh filename="meshes/motor_leg_v3_2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="motor_leg_v3_2_collision">
+            <origin xyz="7.197482609910822e-12 0.04649999640270765 -0.020999999999999998" rpy="-1.5707963267948968 -1.5707963267948963 0" />
+            <geometry>
+                <mesh filename="meshes/motor_leg_v3_2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="motor_leg_v3_3">
+        <inertial>
+            <origin xyz="0.014573950065984392 0.04557229579390135 -0.021000007590479878" rpy="0.0 -0.0 0.0" />
+            <mass value="0.20292153214135678" />
+            <inertia ixx="5.707812256140407e-05" iyy="7.18853807200534e-05" izz="9.123121451445892e-05" ixy="-1.391125459436135e-06" iyz="2.8157185350680125e-11" ixz="7.168171828678127e-11" />
+        </inertial>
+        <visual name="motor_leg_v3_3_visual">
+            <origin xyz="-2.8126122231242333e-09 0.04649999999280484 -0.020999999999999918" rpy="-1.5707963267948966 1.5707963267948963 0" />
+            <geometry>
+                <mesh filename="meshes/motor_leg_v3_3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="motor_leg_v3_3_collision">
+            <origin xyz="-2.8126122231242333e-09 0.04649999999280484 -0.020999999999999918" rpy="-1.5707963267948966 1.5707963267948963 0" />
+            <geometry>
+                <mesh filename="meshes/motor_leg_v3_3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Full_arc_leg_v2">
+        <inertial>
+            <origin xyz="0.02834934125485595 -0.007500000006065317 -0.021720074756443636" rpy="0.0 -0.0 0.0" />
+            <mass value="0.029493963572152095" />
+            <inertia ixx="1.1328432809030922e-05" iyy="4.1264330281591705e-05" izz="3.104192110662781e-05" ixy="-5.3129294583578734e-17" iyz="5.410981992332031e-16" ixz="9.735744974244542e-06" />
+        </inertial>
+        <visual name="Full_arc_leg_v2_visual">
+            <origin xyz="7.196589990599023e-12 -0.007500000007196679 1.7763568394002505e-17" rpy="-6.123233995736761e-17 -1.6081226496766285e-16 -3.141592653589793" />
+            <geometry>
+                <mesh filename="meshes/Full_arc_leg_v2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Full_arc_leg_v2_collision">
+            <origin xyz="7.196589990599023e-12 -0.007500000007196679 1.7763568394002505e-17" rpy="-6.123233995736761e-17 -1.6081226496766285e-16 -3.141592653589793" />
+            <geometry>
+                <mesh filename="meshes/Full_arc_leg_v2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Full_arc_leg_v2_1">
+        <inertial>
+            <origin xyz="0.02834933843504711 -0.00750000000606379 -0.021720074756443605" rpy="0.0 -0.0 0.0" />
+            <mass value="0.029493963572152095" />
+            <inertia ixx="1.132843280903103e-05" iyy="4.126433028159076e-05" izz="3.104192110662705e-05" ixy="-5.2692225582795515e-17" iyz="5.411117517603592e-16" ixz="9.735744974244539e-06" />
+        </inertial>
+        <visual name="Full_arc_leg_v2_1_visual">
+            <origin xyz="-2.8126122231242333e-09 -0.007500000007195151 4.4408920985006264e-17" rpy="-2.449293598294727e-16 1.608122649676636e-16 3.141592653589793" />
+            <geometry>
+                <mesh filename="meshes/Full_arc_leg_v2_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Full_arc_leg_v2_1_collision">
+            <origin xyz="-2.8126122231242333e-09 -0.007500000007195151 4.4408920985006264e-17" rpy="-2.449293598294727e-16 1.608122649676636e-16 3.141592653589793" />
+            <geometry>
+                <mesh filename="meshes/Full_arc_leg_v2_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Full_arc_leg_v2_2">
+        <inertial>
+            <origin xyz="0.028349341254856837 0.007499996403839049 -0.021720074756443636" rpy="0.0 -0.0 0.0" />
+            <mass value="0.029493963572152095" />
+            <inertia ixx="1.1328432809030813e-05" iyy="4.126433028159171e-05" izz="3.1041921106627485e-05" ixy="-5.312590645178972e-17" iyz="5.411253042875153e-16" ixz="9.735744974244539e-06" />
+        </inertial>
+        <visual name="Full_arc_leg_v2_2_visual">
+            <origin xyz="7.197469287234526e-12 0.007499996402707669 8.881784197001253e-18" rpy="-6.123233995736756e-17 1.608122649676638e-16 -3.141592653589793" />
+            <geometry>
+                <mesh filename="meshes/Full_arc_leg_v2_2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Full_arc_leg_v2_2_collision">
+            <origin xyz="7.197469287234526e-12 0.007499996402707669 8.881784197001253e-18" rpy="-6.123233995736756e-17 1.608122649676638e-16 -3.141592653589793" />
+            <geometry>
+                <mesh filename="meshes/Full_arc_leg_v2_2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Full_arc_leg_v2_3">
+        <inertial>
+            <origin xyz="0.028349338435047357 0.007499999993936139 -0.021720074756443566" rpy="0.0 -0.0 0.0" />
+            <mass value="0.029493963572152095" />
+            <inertia ixx="1.1328432809030596e-05" iyy="4.1264330281592064e-05" izz="3.104192110662792e-05" ixy="-5.355958732078392e-17" iyz="5.411524093418274e-16" ixz="9.735744974244485e-06" />
+        </inertial>
+        <visual name="Full_arc_leg_v2_3_visual">
+            <origin xyz="-2.8126120099614128e-09 0.007499999992804742 8.881784197001253e-17" rpy="-2.4492935982947084e-16 -1.6081226496766566e-16 -3.141592653589793" />
+            <geometry>
+                <mesh filename="meshes/Full_arc_leg_v2_3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Full_arc_leg_v2_3_collision">
+            <origin xyz="-2.8126120099614128e-09 0.007499999992804742 8.881784197001253e-17" rpy="-2.4492935982947084e-16 -1.6081226496766566e-16 -3.141592653589793" />
+            <geometry>
+                <mesh filename="meshes/Full_arc_leg_v2_3.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="tail_v2">
+        <inertial>
+            <origin xyz="-0.10250000281261222 -1.2434497875801754e-16 -7.196231111006313e-12" rpy="0.0 -0.0 0.0" />
+            <mass value="0.008743542443394356" />
+            <inertia ixx="1.8823207466419708e-06" iyy="3.0672119195009366e-05" izz="3.06721191950098e-05" ixy="-1.9303340960505108e-84" iyz="-1.5881867761018131e-21" ixz="-2.896852679609707e-19" />
+        </inertial>
+        <visual name="tail_v2_visual">
+            <origin xyz="-0.0015000028126121378 -1.2434497875801754e-16 -7.1952149793830245e-12" rpy="1.5707963267948966 -1.5707963267948866 0" />
+            <geometry>
+                <mesh filename="meshes/tail_v2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="tail_v2_collision">
+            <origin xyz="-0.0015000028126121378 -1.2434497875801754e-16 -7.1952149793830245e-12" rpy="1.5707963267948966 -1.5707963267948866 0" />
+            <geometry>
+                <mesh filename="meshes/tail_v2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+      <!-- Fixed joint connecting base_link to the robot -->
+    <joint name="floating_base" type="fixed" dont_collapse="true">
+        <origin rpy="0 0 0"  xyz="0 0 0"/>
+        <parent link="base"/>
+        <child link="Robotis_6_12_assembly_plate_v1"/>
+    </joint>
+
+    <joint name="Robotis_6_12_assembly_plate_v1_Rigid_1" type="fixed" dont_collapse="true">
+        <origin xyz="0.02362499999280332 -7.196657991759281e-12 -8.881784197001253e-18" rpy="1.5707963267948966 -0.0 1.5707963267948968" />
+        <parent link="Robotis_6_12_assembly_plate_v1" />
+        <child link="AX_12A_with_frames_v3" />
+    </joint>
+    <joint name="Robotis_6_12_assembly_plate_v1_Rigid_2" type="fixed" dont_collapse="true">
+        <origin xyz="-0.02362500000719668 -7.196667428654991e-12 -8.881784197001253e-18" rpy="1.5707963267948966 -0.0 1.5707963267948968" />
+        <parent link="Robotis_6_12_assembly_plate_v1" />
+        <child link="AX_12A_with_frames_v3_1" />
+    </joint>
+    <joint name="AX_12A_with_frames_v3_Rigid_3" type="fixed" dont_collapse="true">
+        <origin xyz="-0.038000000000000006 0.0 0.0" rpy="1.5707963267948966 -0.0 1.5707963267948966" />
+        <parent link="AX_12A_with_frames_v3" />
+        <child link="Robotis_6_12_assembly_plate_v1_1" />
+    </joint>
+    <joint name="Robotis_6_12_assembly_plate_v1_1_Rigid_4" type="fixed" dont_collapse="true">
+        <origin xyz="0.0 -0.023625 -0.0014999999999999992" rpy="1.5707963267948966 -1.5707963267948966 0" />
+        <parent link="Robotis_6_12_assembly_plate_v1_1" />
+        <child link="FP04_F2_v1" />
+    </joint>
+    <joint name="spine_module_v3_joint" type="continuous">
+        <origin xyz="-0.0275 -0.012999999999999998 0.0" rpy="-1.5707963267948966 -4.930380657631323e-32 -1.5707963267948966" />
+        <parent link="FP04_F2_v1" />
+        <child link="spine_module_v3" />
+        <axis xyz="-1.0 -4.930380657631325e-32 -2.465190328815662e-32" />
+    </joint>
+    <joint name="spine_module_v3_1_joint" type="continuous">
+        <origin xyz="0.0 0.0 -0.06748212" rpy="4.930380657631323e-32 -1.5707963267948966 0" />
+        <parent link="spine_module_v3" />
+        <child link="spine_module_v3_1" />
+        <axis xyz="-2.465190328815662e-32 -1.0947644252537633e-47 1.0" />
+    </joint>
+    <joint name="spine_module_v3_2_joint" type="continuous">
+        <origin xyz="-0.06749999999999999 0.0 0.0" rpy="0.0 -0.0 -5.83407682299482e-62" />
+        <parent link="spine_module_v3_1" />
+        <child link="spine_module_v3_2" />
+        <axis xyz="-2.465190328815662e-32 -1.0947644252537633e-47 1.0" />
+    </joint>
+    <joint name="spine_module_v3_3_joint" type="continuous">
+        <origin xyz="-0.0675 0.0 0.0" rpy="1.0947644252537633e-47 -2.465190328815662e-32 -7.2925960287435254e-62" />
+        <parent link="spine_module_v3_2" />
+        <child link="spine_module_v3_3" />
+        <axis xyz="-0.0 -0.0 1.0" />
+    </joint>
+    <joint name="spine_module_v3_3_Rigid_9" type="fixed" dont_collapse="true">
+        <origin xyz="-0.04148211 0.0 0.012999999999999998" rpy="-1.5707963267948966 2.465190328815662e-32 -4.861730685829017e-63" />
+        <parent link="spine_module_v3_3" />
+        <child link="Robotis_6_12_assembly_plate_v1_2" />
+    </joint>
+    <joint name="Robotis_6_12_assembly_plate_v1_2_Rigid_10" type="fixed" dont_collapse="true">
+        <origin xyz="-0.003000000000000007 0.0 0.023625" rpy="1.0947644252537633e-47 2.4308653429145085e-63 -2.465190328815662e-32" />
+        <parent link="Robotis_6_12_assembly_plate_v1_2" />
+        <child link="AX_12A_with_frames_v3_2" />
+    </joint>
+    <joint name="Robotis_6_12_assembly_plate_v1_2_Rigid_11" type="fixed" dont_collapse="true">
+        <origin xyz="-0.003000000000000007 0.0 -0.023625000000000004" rpy="1.0947644252537633e-47 2.4308653429145085e-63 -2.465190328815662e-32" />
+        <parent link="Robotis_6_12_assembly_plate_v1_2" />
+        <child link="AX_12A_with_frames_v3_3" />
+    </joint>
+    <joint name="AX_12A_with_frames_v3_2_Rigid_12" type="fixed" dont_collapse="true">
+        <origin xyz="-0.03799999999999997 0.0 0.0" rpy="1.5707963267948966 -0.0 1.5707963267948966" />
+        <parent link="AX_12A_with_frames_v3_2" />
+        <child link="Robotis_6_12_assembly_plate_v1_3" />
+    </joint>
+    <joint name="motor_leg_v3_joint" type="continuous">
+        <origin xyz="-0.019000000000000003 0.012999999999999998 0.0305" rpy="-1.5707963267948966 2.0293014325813062e-48 0.0" />
+        <parent link="AX_12A_with_frames_v3" />
+        <child link="motor_leg_v3" />
+        <axis xyz="0.0 0.0 1.0" />
+    </joint>
+    <joint name="motor_leg_v3_1_joint" type="continuous">
+        <origin xyz="-0.018999999999999986 0.012999999999999998 0.0305" rpy="-1.5707963267948966 1.4049009917870598e-47 0.0" />
+        <parent link="AX_12A_with_frames_v3_2" />
+        <child link="motor_leg_v3_1" />
+        <axis xyz="0.0 0.0 1.0" />
+    </joint>
+    <joint name="motor_leg_v3_2_joint" type="continuous">
+        <origin xyz="-0.019000000000000003 0.012999999999999998 -0.03048212" rpy="-1.5707963267948966 -0.0 0.0" />
+        <parent link="AX_12A_with_frames_v3_1" />
+        <child link="motor_leg_v3_2" />
+        <axis xyz="0.0 0.0 1.0" />
+    </joint>
+    <joint name="motor_leg_v3_3_joint" type="continuous">
+        <origin xyz="-0.018999999999999986 0.012999999999999998 -0.030500000000000003" rpy="-1.5707963267948966 1.4049009917870598e-47 0.0" />
+        <parent link="AX_12A_with_frames_v3_3" />
+        <child link="motor_leg_v3_3" />
+        <axis xyz="0.0 0.0 1.0" />
+    </joint>
+    <joint name="Full_arc_leg_v2_joint" type="continuous">
+        <origin xyz="0.0 -0.07 -0.020999999999999998" rpy="-3.5707495841844565e-32 1.232595164407831e-32 -2.0293014325813062e-48" />
+        <parent link="motor_leg_v3" />
+        <child link="Full_arc_leg_v2" />
+        <axis xyz="0.0 -1.0 -6.290011731078209e-32" />
+    </joint>
+    <joint name="Full_arc_leg_v2_1_joint" type="continuous">
+        <origin xyz="0.0 -0.07 -0.020999999999999998" rpy="-7.244515282516387e-33 -4.930380657631324e-32 0.0" />
+        <parent link="motor_leg_v3_1" />
+        <child link="Full_arc_leg_v2_1" />
+        <axis xyz="0.0 -1.0 1.0815394604762687e-33" />
+    </joint>
+    <joint name="Full_arc_leg_v2_2_joint" type="continuous">
+        <origin xyz="0.0 0.06999999999999999 -0.020999999999999998" rpy="1.2703590903905765e-33 -0.0 0.0" />
+        <parent link="motor_leg_v3_2" />
+        <child link="Full_arc_leg_v2_2" />
+        <axis xyz="0.0 1.0 1.2703590903905929e-33" />
+    </joint>
+    <joint name="Full_arc_leg_v2_3_joint" type="continuous">
+        <origin xyz="0.0 0.07 -0.020999999999999998" rpy="5.0814363615632145e-33 -0.0 0.0" />
+        <parent link="motor_leg_v3_3" />
+        <child link="Full_arc_leg_v2_3" />
+        <axis xyz="0.0 1.0 1.7407388005641185e-32" />
+    </joint>
+    <joint name="Robotis_6_12_assembly_plate_v1_3_Rigid_21" type="fixed" dont_collapse="true">
+        <origin xyz="0.0 -0.023625 -0.0015000000000000568" rpy="1.5707963267948966 -1.5707963267948966 0" />
+        <parent link="Robotis_6_12_assembly_plate_v1_3" />
+        <child link="tail_v2" />
+    </joint>
+</robot>
