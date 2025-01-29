@@ -5,37 +5,26 @@
        <geometry>
            <box size="0.01 0.01 0.01"/>
        </geometry>
-    </visual> 
-    <collision> 
-       <origin rpy="0 0 0" xyz="0 0 0"/>
-       <geometry>
-           <box size="0.01 0.01 0.01"/>
-       </geometry>
-    </collision> 
-    <inertial> 
-       <origin rpy="0 0 0" xyz="0.0 0.0 -0.005685819981630294"/>
-       <mass value="7.203394176650595e-07"/>
-       <inertia ixx="1.4830074639166873e-11" ixy="0" ixz="0" iyy="1.4830074639166873e-11" iyz="0" izz="1.2005656961084328e-11"/>
-    </inertial> 
+    </visual>
   </link>
 
   <link name="trunk"> 
     <visual>
        <origin rpy="0 0 0"  xyz="0 0 0"/>
        <geometry>
-           <box size="0.40175108862981995 0.3487281877784439 0.09261811554700795"/>
+           <box size="0.6861772090809941 0.3034325696406455 0.0954450721288132"/>
        </geometry>
     </visual> 
     <collision> 
        <origin rpy="0 0 0" xyz="0 0 0"/>
        <geometry>
-           <box size="0.40175108862981995 0.3487281877784439 0.09261811554700795"/>
+           <box size="0.6861772090809941 0.3034325696406455 0.0954450721288132"/>
        </geometry>
     </collision> 
     <inertial> 
-       <origin rpy="0 0 0" xyz="0.0 0.0 -0.05266099320381212"/>
-       <mass value="0.014493089404382023"/>
-       <inertia ixx="0.00016211195839327318" ixy="0" ixz="0" iyy="0.00016211195839327318" iyz="0" izz="0.0003418138204348001"/>
+       <origin rpy="0 0 0" xyz="0.0 0.0 -0.0477225360644066"/>
+       <mass value="29.808714923389527"/>
+       <inertia ixx="0.25133984596362047" ixy="0" ixz="0" iyy="0.25133984596362047" iyz="0" izz="1.3983031851563965"/>
     </inertial> 
   </link>
 
@@ -43,39 +32,39 @@
     <visual>
        <origin rpy="0 0 0"  xyz="0 0 0"/>
        <geometry>
-           <sphere radius="0.045178046813038"/>
+           <sphere radius="0.04137735453050819"/>
        </geometry>
     </visual> 
-    <collision> 
+    <!-- <collision> 
        <origin rpy="0 0 0" xyz="0 0 0"/>
        <geometry>
-           <sphere radius="0.045178046813038"/>
+           <sphere radius="0.04137735453050819"/>
        </geometry>
-    </collision> 
+    </collision>  -->
     <inertial> 
-       <origin rpy="0 0 0" xyz="0.0 0.0 0.045178046813038"/>
-       <mass value="0.0007133946346302859"/>
-       <inertia ixx="5.824313351658488e-07" ixy="0" ixz="0" iyy="5.824313351658488e-07" iyz="0" izz="5.824313351658488e-07"/>
+       <origin rpy="0 0 0" xyz="0.0 0.0 0.04137735453050819"/>
+       <mass value="0.4451106953851888"/>
+       <inertia ixx="0.00030482702127805937" ixy="0" ixz="0" iyy="0.00030482702127805937" iyz="0" izz="0.00030482702127805937"/>
     </inertial> 
   </link>
 
   <link name="FR_thigh"> 
     <visual>
-       <origin rpy="0 0 0"  xyz="0 0 -0.16558785845285673"/>
+       <origin rpy="0 0 0"  xyz="0 0 -0.16301713389930214"/>
        <geometry>
-           <cylinder length= "0.33117571690571346" radius="0.045178046813038"/>
+           <cylinder length= "0.3260342677986043" radius="0.04137735453050819"/>
        </geometry>
     </visual> 
-    <collision> 
-       <origin rpy="0 0 0" xyz="0 0 -0.16558785845285673"/>
+    <!-- <collision> 
+       <origin rpy="0 0 0" xyz="0 0 -0.16301713389930214"/>
        <geometry>
-           <cylinder length= "0.33117571690571346" radius="0.045178046813038"/>
+           <cylinder length= "0.3260342677986043" radius="0.04137735453050819"/>
        </geometry>
-    </collision> 
+    </collision>  -->
     <inertial> 
-       <origin rpy="0 0 0" xyz="0.0 0.0 -0.18830055086132433"/>
-       <mass value="0.002595583183064086"/>
-       <inertia ixx="2.4601166171620643e-05" ixy="0" ixz="0" iyy="2.4601166171620643e-05" iyz="0" izz="2.6488652028296683e-06"/>
+       <origin rpy="0 0 0" xyz="0.0 0.0 -0.16301713389930214"/>
+       <mass value="2.6304486108259537"/>
+       <inertia ixx="0.024426915770733117" ixy="0" ixz="0" iyy="0.024426915770733117" iyz="0" izz="0.002251776420383466"/>
     </inertial> 
   </link>
 
@@ -83,39 +72,39 @@
     <visual>
        <origin rpy="0 0 0"  xyz="0 0 0"/>
        <geometry>
-           <sphere radius="0.045178046813038"/>
+           <sphere radius="0.0429619227247509"/>
        </geometry>
     </visual> 
-    <collision> 
+    <!-- <collision> 
        <origin rpy="0 0 0" xyz="0 0 0"/>
        <geometry>
-           <sphere radius="0.045178046813038"/>
+           <sphere radius="0.0429619227247509"/>
        </geometry>
-    </collision> 
+    </collision>  -->
     <inertial> 
-       <origin rpy="0 0 0" xyz="0.0 0.0 0.045178046813038"/>
-       <mass value="0.0005897571161158912"/>
-       <inertia ixx="4.814908998312737e-07" ixy="0" ixz="0" iyy="4.814908998312737e-07" iyz="0" izz="4.814908998312737e-07"/>
+       <origin rpy="0 0 0" xyz="0.0 0.0 0.0429619227247509"/>
+       <mass value="0.4982312882835031"/>
+       <inertia ixx="0.0003678395373918719" ixy="0" ixz="0" iyy="0.0003678395373918719" iyz="0" izz="0.0003678395373918719"/>
     </inertial> 
   </link>
 
   <link name="FR_calf"> 
     <visual>
-       <origin rpy="0 0 0"  xyz="0 0 -0.14127846519187032"/>
+       <origin rpy="0 0 0"  xyz="0 0 -0.13376101745186045"/>
        <geometry>
-           <cylinder length= "0.28255693038374063" radius="0.043181899178432334"/>
+           <cylinder length= "0.2675220349037209" radius="0.0429619227247509"/>
        </geometry>
     </visual> 
-    <collision> 
-       <origin rpy="0 0 0" xyz="0 0 -0.14127846519187032"/>
+    <!-- <collision> 
+       <origin rpy="0 0 0" xyz="0 0 -0.13376101745186045"/>
        <geometry>
-           <cylinder length= "0.28255693038374063" radius="0.043181899178432334"/>
+           <cylinder length= "0.2675220349037209" radius="0.0429619227247509"/>
        </geometry>
-    </collision> 
+    </collision>  -->
     <inertial> 
-       <origin rpy="0 0 0" xyz="0.0 0.0 -0.16065678407239925"/>
-       <mass value="0.0021896533585434724"/>
-       <inertia ixx="1.5314868262840965e-05" ixy="0" ixz="0" iyy="1.5314868262840965e-05" iyz="0" izz="2.041497489164132e-06"/>
+       <origin rpy="0 0 0" xyz="0.0 0.0 -0.13376101745186045"/>
+       <mass value="2.3268485144669113"/>
+       <inertia ixx="0.014951013801494913" ixy="0" ixz="0" iyy="0.014951013801494913" iyz="0" izz="0.002147363336240953"/>
     </inertial> 
   </link>
 
@@ -123,19 +112,19 @@
     <visual>
        <origin rpy="0 0 0"  xyz="0 0 0"/>
        <geometry>
-           <sphere radius="0.03022732942490263"/>
+           <sphere radius="0.02896414817135573"/>
        </geometry>
     </visual> 
     <collision> 
        <origin rpy="0 0 0" xyz="0 0 0"/>
        <geometry>
-           <sphere radius="0.03022732942490263"/>
+           <sphere radius="0.02896414817135573"/>
        </geometry>
     </collision> 
     <inertial> 
-       <origin rpy="0 0 0" xyz="0.0 0.0 0.03022732942490263"/>
-       <mass value="0.0002211679474225979"/>
-       <inertia ixx="8.083170451312274e-08" ixy="0" ixz="0" iyy="8.083170451312274e-08" iyz="0" izz="8.083170451312274e-08"/>
+       <origin rpy="0 0 0" xyz="0.0 0.0 0.02896414817135573"/>
+       <mass value="0.15267296851711973"/>
+       <inertia ixx="5.1232277466203415e-05" ixy="0" ixz="0" iyy="5.1232277466203415e-05" iyz="0" izz="5.1232277466203415e-05"/>
     </inertial> 
   </link>
 
@@ -143,39 +132,39 @@
     <visual>
        <origin rpy="0 0 0"  xyz="0 0 0"/>
        <geometry>
-           <sphere radius="0.045178046813038"/>
+           <sphere radius="0.04137735453050819"/>
        </geometry>
     </visual> 
-    <collision> 
+    <!-- <collision> 
        <origin rpy="0 0 0" xyz="0 0 0"/>
        <geometry>
-           <sphere radius="0.045178046813038"/>
+           <sphere radius="0.04137735453050819"/>
        </geometry>
-    </collision> 
+    </collision>  -->
     <inertial> 
-       <origin rpy="0 0 0" xyz="0.0 0.0 0.045178046813038"/>
-       <mass value="0.00022932322639885932"/>
-       <inertia ixx="1.87224610969001e-07" ixy="0" ixz="0" iyy="1.87224610969001e-07" iyz="0" izz="1.87224610969001e-07"/>
+       <origin rpy="0 0 0" xyz="0.0 0.0 0.04137735453050819"/>
+       <mass value="0.4451106953851888"/>
+       <inertia ixx="0.00030482702127805937" ixy="0" ixz="0" iyy="0.00030482702127805937" iyz="0" izz="0.00030482702127805937"/>
     </inertial> 
   </link>
 
   <link name="FL_thigh"> 
     <visual>
-       <origin rpy="0 0 0"  xyz="0 0 -0.16558785845285673"/>
+       <origin rpy="0 0 0"  xyz="0 0 -0.16301713389930214"/>
        <geometry>
-           <cylinder length= "0.33117571690571346" radius="0.045178046813038"/>
+           <cylinder length= "0.3260342677986043" radius="0.04137735453050819"/>
        </geometry>
     </visual> 
-    <collision> 
-       <origin rpy="0 0 0" xyz="0 0 -0.16558785845285673"/>
+    <!-- <collision> 
+       <origin rpy="0 0 0" xyz="0 0 -0.16301713389930214"/>
        <geometry>
-           <cylinder length= "0.33117571690571346" radius="0.045178046813038"/>
+           <cylinder length= "0.3260342677986043" radius="0.04137735453050819"/>
        </geometry>
-    </collision> 
+    </collision>  -->
     <inertial> 
-       <origin rpy="0 0 0" xyz="0.0 0.0 -0.18830055086132433"/>
-       <mass value="0.0035319234883072845"/>
-       <inertia ixx="3.3475882109362626e-05" ixy="0" ixz="0" iyy="3.3475882109362626e-05" iyz="0" izz="3.6044266615218513e-06"/>
+       <origin rpy="0 0 0" xyz="0.0 0.0 -0.16301713389930214"/>
+       <mass value="2.6304486108259537"/>
+       <inertia ixx="0.024426915770733117" ixy="0" ixz="0" iyy="0.024426915770733117" iyz="0" izz="0.002251776420383466"/>
     </inertial> 
   </link>
 
@@ -183,39 +172,39 @@
     <visual>
        <origin rpy="0 0 0"  xyz="0 0 0"/>
        <geometry>
-           <sphere radius="0.045178046813038"/>
+           <sphere radius="0.0429619227247509"/>
        </geometry>
     </visual> 
-    <collision> 
+    <!-- <collision> 
        <origin rpy="0 0 0" xyz="0 0 0"/>
        <geometry>
-           <sphere radius="0.045178046813038"/>
+           <sphere radius="0.0429619227247509"/>
        </geometry>
-    </collision> 
+    </collision>  -->
     <inertial> 
-       <origin rpy="0 0 0" xyz="0.0 0.0 0.045178046813038"/>
-       <mass value="0.0004655652060141283"/>
-       <inertia ixx="3.800978468055059e-07" ixy="0" ixz="0" iyy="3.800978468055059e-07" iyz="0" izz="3.800978468055059e-07"/>
+       <origin rpy="0 0 0" xyz="0.0 0.0 0.0429619227247509"/>
+       <mass value="0.4982312882835031"/>
+       <inertia ixx="0.0003678395373918719" ixy="0" ixz="0" iyy="0.0003678395373918719" iyz="0" izz="0.0003678395373918719"/>
     </inertial> 
   </link>
 
   <link name="FL_calf"> 
     <visual>
-       <origin rpy="0 0 0"  xyz="0 0 -0.14127846519187032"/>
+       <origin rpy="0 0 0"  xyz="0 0 -0.13376101745186045"/>
        <geometry>
-           <cylinder length= "0.28255693038374063" radius="0.043181899178432334"/>
+           <cylinder length= "0.2675220349037209" radius="0.0429619227247509"/>
        </geometry>
     </visual> 
-    <collision> 
-       <origin rpy="0 0 0" xyz="0 0 -0.14127846519187032"/>
+    <!-- <collision> 
+       <origin rpy="0 0 0" xyz="0 0 -0.13376101745186045"/>
        <geometry>
-           <cylinder length= "0.28255693038374063" radius="0.043181899178432334"/>
+           <cylinder length= "0.2675220349037209" radius="0.0429619227247509"/>
        </geometry>
-    </collision> 
+    </collision>  -->
     <inertial> 
-       <origin rpy="0 0 0" xyz="0.0 0.0 -0.16065678407239925"/>
-       <mass value="0.0021743238101132596"/>
-       <inertia ixx="1.52076503720175e-05" ixy="0" ixz="0" iyy="1.52076503720175e-05" iyz="0" izz="2.027205165446228e-06"/>
+       <origin rpy="0 0 0" xyz="0.0 0.0 -0.13376101745186045"/>
+       <mass value="2.3268485144669113"/>
+       <inertia ixx="0.014951013801494913" ixy="0" ixz="0" iyy="0.014951013801494913" iyz="0" izz="0.002147363336240953"/>
     </inertial> 
   </link>
 
@@ -223,19 +212,19 @@
     <visual>
        <origin rpy="0 0 0"  xyz="0 0 0"/>
        <geometry>
-           <sphere radius="0.03022732942490263"/>
+           <sphere radius="0.02896414817135573"/>
        </geometry>
     </visual> 
     <collision> 
        <origin rpy="0 0 0" xyz="0 0 0"/>
        <geometry>
-           <sphere radius="0.03022732942490263"/>
+           <sphere radius="0.02896414817135573"/>
        </geometry>
     </collision> 
     <inertial> 
-       <origin rpy="0 0 0" xyz="0.0 0.0 0.03022732942490263"/>
-       <mass value="0.00018492113189266972"/>
-       <inertia ixx="6.758434242200329e-08" ixy="0" ixz="0" iyy="6.758434242200329e-08" iyz="0" izz="6.758434242200329e-08"/>
+       <origin rpy="0 0 0" xyz="0.0 0.0 0.02896414817135573"/>
+       <mass value="0.15267296851711973"/>
+       <inertia ixx="5.1232277466203415e-05" ixy="0" ixz="0" iyy="5.1232277466203415e-05" iyz="0" izz="5.1232277466203415e-05"/>
     </inertial> 
   </link>
 
@@ -243,39 +232,39 @@
     <visual>
        <origin rpy="0 0 0"  xyz="0 0 0"/>
        <geometry>
-           <sphere radius="0.045178046813038"/>
+           <sphere radius="0.04137735453050819"/>
        </geometry>
     </visual> 
-    <collision> 
+    <!-- <collision> 
        <origin rpy="0 0 0" xyz="0 0 0"/>
        <geometry>
-           <sphere radius="0.045178046813038"/>
+           <sphere radius="0.04137735453050819"/>
        </geometry>
-    </collision> 
+    </collision>  -->
     <inertial> 
-       <origin rpy="0 0 0" xyz="0.0 0.0 0.045178046813038"/>
-       <mass value="0.0006461741726299969"/>
-       <inertia ixx="5.275510465671217e-07" ixy="0" ixz="0" iyy="5.275510465671217e-07" iyz="0" izz="5.275510465671217e-07"/>
+       <origin rpy="0 0 0" xyz="0.0 0.0 0.04137735453050819"/>
+       <mass value="0.4451106953851888"/>
+       <inertia ixx="0.00030482702127805937" ixy="0" ixz="0" iyy="0.00030482702127805937" iyz="0" izz="0.00030482702127805937"/>
     </inertial> 
   </link>
 
   <link name="RR_thigh"> 
     <visual>
-       <origin rpy="0 0 0"  xyz="0 0 -0.16558785845285673"/>
+       <origin rpy="0 0 0"  xyz="0 0 -0.16301713389930214"/>
        <geometry>
-           <cylinder length= "0.33117571690571346" radius="0.045178046813038"/>
+           <cylinder length= "0.3260342677986043" radius="0.04137735453050819"/>
        </geometry>
     </visual> 
-    <collision> 
-       <origin rpy="0 0 0" xyz="0 0 -0.16558785845285673"/>
+    <!-- <collision> 
+       <origin rpy="0 0 0" xyz="0 0 -0.16301713389930214"/>
        <geometry>
-           <cylinder length= "0.33117571690571346" radius="0.045178046813038"/>
+           <cylinder length= "0.3260342677986043" radius="0.04137735453050819"/>
        </geometry>
-    </collision> 
+    </collision>  -->
     <inertial> 
-       <origin rpy="0 0 0" xyz="0.0 0.0 -0.18830055086132433"/>
-       <mass value="0.001527485349278443"/>
-       <inertia ixx="1.4477640765862198e-05" ixy="0" ixz="0" iyy="1.4477640765862198e-05" iyz="0" izz="1.558841502725166e-06"/>
+       <origin rpy="0 0 0" xyz="0.0 0.0 -0.16301713389930214"/>
+       <mass value="2.6304486108259537"/>
+       <inertia ixx="0.024426915770733117" ixy="0" ixz="0" iyy="0.024426915770733117" iyz="0" izz="0.002251776420383466"/>
     </inertial> 
   </link>
 
@@ -283,39 +272,39 @@
     <visual>
        <origin rpy="0 0 0"  xyz="0 0 0"/>
        <geometry>
-           <sphere radius="0.045178046813038"/>
+           <sphere radius="0.0429619227247509"/>
        </geometry>
     </visual> 
-    <collision> 
+    <!-- <collision> 
        <origin rpy="0 0 0" xyz="0 0 0"/>
        <geometry>
-           <sphere radius="0.045178046813038"/>
+           <sphere radius="0.0429619227247509"/>
        </geometry>
-    </collision> 
+    </collision>  -->
     <inertial> 
-       <origin rpy="0 0 0" xyz="0.0 0.0 0.045178046813038"/>
-       <mass value="0.0006060964622261971"/>
-       <inertia ixx="4.948307074339679e-07" ixy="0" ixz="0" iyy="4.948307074339679e-07" iyz="0" izz="4.948307074339679e-07"/>
+       <origin rpy="0 0 0" xyz="0.0 0.0 0.0429619227247509"/>
+       <mass value="0.4982312882835031"/>
+       <inertia ixx="0.0003678395373918719" ixy="0" ixz="0" iyy="0.0003678395373918719" iyz="0" izz="0.0003678395373918719"/>
     </inertial> 
   </link>
 
   <link name="RR_calf"> 
     <visual>
-       <origin rpy="0 0 0"  xyz="0 0 -0.14127846519187032"/>
+       <origin rpy="0 0 0"  xyz="0 0 -0.13376101745186045"/>
        <geometry>
-           <cylinder length= "0.28255693038374063" radius="0.043181899178432334"/>
+           <cylinder length= "0.2675220349037209" radius="0.0429619227247509"/>
        </geometry>
     </visual> 
-    <collision> 
-       <origin rpy="0 0 0" xyz="0 0 -0.14127846519187032"/>
+    <!-- <collision> 
+       <origin rpy="0 0 0" xyz="0 0 -0.13376101745186045"/>
        <geometry>
-           <cylinder length= "0.28255693038374063" radius="0.043181899178432334"/>
+           <cylinder length= "0.2675220349037209" radius="0.0429619227247509"/>
        </geometry>
-    </collision> 
+    </collision>  -->
     <inertial> 
-       <origin rpy="0 0 0" xyz="0.0 0.0 -0.16065678407239925"/>
-       <mass value="0.002988473888183745"/>
-       <inertia ixx="2.090197689323688e-05" ixy="0" ixz="0" iyy="2.090197689323688e-05" iyz="0" izz="2.786268390544686e-06"/>
+       <origin rpy="0 0 0" xyz="0.0 0.0 -0.13376101745186045"/>
+       <mass value="2.3268485144669113"/>
+       <inertia ixx="0.014951013801494913" ixy="0" ixz="0" iyy="0.014951013801494913" iyz="0" izz="0.002147363336240953"/>
     </inertial> 
   </link>
 
@@ -323,19 +312,19 @@
     <visual>
        <origin rpy="0 0 0"  xyz="0 0 0"/>
        <geometry>
-           <sphere radius="0.03022732942490263"/>
+           <sphere radius="0.02896414817135573"/>
        </geometry>
     </visual> 
     <collision> 
        <origin rpy="0 0 0" xyz="0 0 0"/>
        <geometry>
-           <sphere radius="0.03022732942490263"/>
+           <sphere radius="0.02896414817135573"/>
        </geometry>
     </collision> 
     <inertial> 
-       <origin rpy="0 0 0" xyz="0.0 0.0 0.03022732942490263"/>
-       <mass value="0.00010220979717657491"/>
-       <inertia ixx="3.7355286875890954e-08" ixy="0" ixz="0" iyy="3.7355286875890954e-08" iyz="0" izz="3.7355286875890954e-08"/>
+       <origin rpy="0 0 0" xyz="0.0 0.0 0.02896414817135573"/>
+       <mass value="0.15267296851711973"/>
+       <inertia ixx="5.1232277466203415e-05" ixy="0" ixz="0" iyy="5.1232277466203415e-05" iyz="0" izz="5.1232277466203415e-05"/>
     </inertial> 
   </link>
 
@@ -343,39 +332,39 @@
     <visual>
        <origin rpy="0 0 0"  xyz="0 0 0"/>
        <geometry>
-           <sphere radius="0.045178046813038"/>
+           <sphere radius="0.04137735453050819"/>
        </geometry>
     </visual> 
-    <collision> 
+    <!-- <collision> 
        <origin rpy="0 0 0" xyz="0 0 0"/>
        <geometry>
-           <sphere radius="0.045178046813038"/>
+           <sphere radius="0.04137735453050819"/>
        </geometry>
-    </collision> 
+    </collision>  -->
     <inertial> 
-       <origin rpy="0 0 0" xyz="0.0 0.0 0.045178046813038"/>
-       <mass value="0.0002645088064979321"/>
-       <inertia ixx="2.1595090550625722e-07" ixy="0" ixz="0" iyy="2.1595090550625722e-07" iyz="0" izz="2.1595090550625722e-07"/>
+       <origin rpy="0 0 0" xyz="0.0 0.0 0.04137735453050819"/>
+       <mass value="0.4451106953851888"/>
+       <inertia ixx="0.00030482702127805937" ixy="0" ixz="0" iyy="0.00030482702127805937" iyz="0" izz="0.00030482702127805937"/>
     </inertial> 
   </link>
 
   <link name="RL_thigh"> 
     <visual>
-       <origin rpy="0 0 0"  xyz="0 0 -0.16558785845285673"/>
+       <origin rpy="0 0 0"  xyz="0 0 -0.16301713389930214"/>
        <geometry>
-           <cylinder length= "0.33117571690571346" radius="0.045178046813038"/>
+           <cylinder length= "0.3260342677986043" radius="0.04137735453050819"/>
        </geometry>
     </visual> 
-    <collision> 
-       <origin rpy="0 0 0" xyz="0 0 -0.16558785845285673"/>
+    <!-- <collision> 
+       <origin rpy="0 0 0" xyz="0 0 -0.16301713389930214"/>
        <geometry>
-           <cylinder length= "0.33117571690571346" radius="0.045178046813038"/>
+           <cylinder length= "0.3260342677986043" radius="0.04137735453050819"/>
        </geometry>
-    </collision> 
+    </collision>  -->
     <inertial> 
-       <origin rpy="0 0 0" xyz="0.0 0.0 -0.18830055086132433"/>
-       <mass value="0.0039907554860377815"/>
-       <inertia ixx="3.782473222315454e-05" ixy="0" ixz="0" iyy="3.782473222315454e-05" iyz="0" izz="4.072677542735519e-06"/>
+       <origin rpy="0 0 0" xyz="0.0 0.0 -0.16301713389930214"/>
+       <mass value="2.6304486108259537"/>
+       <inertia ixx="0.024426915770733117" ixy="0" ixz="0" iyy="0.024426915770733117" iyz="0" izz="0.002251776420383466"/>
     </inertial> 
   </link>
 
@@ -383,39 +372,39 @@
     <visual>
        <origin rpy="0 0 0"  xyz="0 0 0"/>
        <geometry>
-           <sphere radius="0.045178046813038"/>
+           <sphere radius="0.0429619227247509"/>
        </geometry>
     </visual> 
-    <collision> 
+    <!-- <collision> 
        <origin rpy="0 0 0" xyz="0 0 0"/>
        <geometry>
-           <sphere radius="0.045178046813038"/>
+           <sphere radius="0.0429619227247509"/>
        </geometry>
-    </collision> 
+    </collision>  -->
     <inertial> 
-       <origin rpy="0 0 0" xyz="0.0 0.0 0.045178046813038"/>
-       <mass value="0.0007413487391799301"/>
-       <inertia ixx="6.052536913287218e-07" ixy="0" ixz="0" iyy="6.052536913287218e-07" iyz="0" izz="6.052536913287218e-07"/>
+       <origin rpy="0 0 0" xyz="0.0 0.0 0.0429619227247509"/>
+       <mass value="0.4982312882835031"/>
+       <inertia ixx="0.0003678395373918719" ixy="0" ixz="0" iyy="0.0003678395373918719" iyz="0" izz="0.0003678395373918719"/>
     </inertial> 
   </link>
 
   <link name="RL_calf"> 
     <visual>
-       <origin rpy="0 0 0"  xyz="0 0 -0.14127846519187032"/>
+       <origin rpy="0 0 0"  xyz="0 0 -0.13376101745186045"/>
        <geometry>
-           <cylinder length= "0.28255693038374063" radius="0.043181899178432334"/>
+           <cylinder length= "0.2675220349037209" radius="0.0429619227247509"/>
        </geometry>
     </visual> 
-    <collision> 
-       <origin rpy="0 0 0" xyz="0 0 -0.14127846519187032"/>
+    <!-- <collision> 
+       <origin rpy="0 0 0" xyz="0 0 -0.13376101745186045"/>
        <geometry>
-           <cylinder length= "0.28255693038374063" radius="0.043181899178432334"/>
+           <cylinder length= "0.2675220349037209" radius="0.0429619227247509"/>
        </geometry>
-    </collision> 
+    </collision>  -->
     <inertial> 
-       <origin rpy="0 0 0" xyz="0.0 0.0 -0.16065678407239925"/>
-       <mass value="0.0012361981975151917"/>
-       <inertia ixx="8.646214464877704e-06" ixy="0" ixz="0" iyy="8.646214464877704e-06" iyz="0" izz="1.1525548126097993e-06"/>
+       <origin rpy="0 0 0" xyz="0.0 0.0 -0.13376101745186045"/>
+       <mass value="2.3268485144669113"/>
+       <inertia ixx="0.014951013801494913" ixy="0" ixz="0" iyy="0.014951013801494913" iyz="0" izz="0.002147363336240953"/>
     </inertial> 
   </link>
 
@@ -423,19 +412,19 @@
     <visual>
        <origin rpy="0 0 0"  xyz="0 0 0"/>
        <geometry>
-           <sphere radius="0.03022732942490263"/>
+           <sphere radius="0.02896414817135573"/>
        </geometry>
     </visual> 
     <collision> 
        <origin rpy="0 0 0" xyz="0 0 0"/>
        <geometry>
-           <sphere radius="0.03022732942490263"/>
+           <sphere radius="0.02896414817135573"/>
        </geometry>
     </collision> 
     <inertial> 
-       <origin rpy="0 0 0" xyz="0.0 0.0 0.03022732942490263"/>
-       <mass value="0.0001796348284367131"/>
-       <inertia ixx="6.565232232642354e-08" ixy="0" ixz="0" iyy="6.565232232642354e-08" iyz="0" izz="6.565232232642354e-08"/>
+       <origin rpy="0 0 0" xyz="0.0 0.0 0.02896414817135573"/>
+       <mass value="0.15267296851711973"/>
+       <inertia ixx="5.1232277466203415e-05" ixy="0" ixz="0" iyy="5.1232277466203415e-05" iyz="0" izz="5.1232277466203415e-05"/>
     </inertial> 
   </link>
 
@@ -446,7 +435,7 @@
   </joint>
 
   <joint name="FR_hip_joint" type="revolute">
-    <origin rpy="0 0 0"  xyz="0.20087554431490998 -0.17436409388922194 -0.03704724621880318"/>
+    <origin rpy="0 0 0"  xyz="0.34308860454049706 -0.15171628482032276 -0.038178028851525284"/>
     <parent link="trunk"/>
     <child link="FR_hip"/>
     <axis xyz="1 0 0"/>
@@ -464,7 +453,7 @@
   </joint>
 
   <joint name="FR_knee_joint" type="fixed" dont_collapse="true">
-    <origin rpy="0 0 0"  xyz="0 0 -0.33117571690571346"/>
+    <origin rpy="0 0 0"  xyz="0 0 -0.3260342677986043"/>
     <parent link="FR_thigh"/>
     <child link="FR_knee"/>
   </joint>
@@ -479,13 +468,13 @@
   </joint>
 
   <joint name="FR_foot_joint" type="fixed" dont_collapse="true">
-    <origin rpy="0 0 0"  xyz="0 0 -0.28255693038374063"/>
+    <origin rpy="0 0 0"  xyz="0 0 -0.2675220349037209"/>
     <parent link="FR_calf"/>
     <child link="FR_foot"/>
   </joint>
 
   <joint name="FL_hip_joint" type="revolute">
-    <origin rpy="0 0 0"  xyz="0.20087554431490998 0.17436409388922194 -0.03704724621880318"/>
+    <origin rpy="0 0 0"  xyz="0.34308860454049706 0.15171628482032276 -0.038178028851525284"/>
     <parent link="trunk"/>
     <child link="FL_hip"/>
     <axis xyz="1 0 0"/>
@@ -503,7 +492,7 @@
   </joint>
 
   <joint name="FL_knee_joint" type="fixed" dont_collapse="true">
-    <origin rpy="0 0 0"  xyz="0 0 -0.33117571690571346"/>
+    <origin rpy="0 0 0"  xyz="0 0 -0.3260342677986043"/>
     <parent link="FL_thigh"/>
     <child link="FL_knee"/>
   </joint>
@@ -518,13 +507,13 @@
   </joint>
 
   <joint name="FL_foot_joint" type="fixed" dont_collapse="true">
-    <origin rpy="0 0 0"  xyz="0 0 -0.28255693038374063"/>
+    <origin rpy="0 0 0"  xyz="0 0 -0.2675220349037209"/>
     <parent link="FL_calf"/>
     <child link="FL_foot"/>
   </joint>
 
   <joint name="RR_hip_joint" type="revolute">
-    <origin rpy="0 0 0"  xyz="-0.20087554431490998 -0.17436409388922194 -0.03704724621880318"/>
+    <origin rpy="0 0 0"  xyz="-0.34308860454049706 -0.15171628482032276 -0.038178028851525284"/>
     <parent link="trunk"/>
     <child link="RR_hip"/>
     <axis xyz="1 0 0"/>
@@ -542,7 +531,7 @@
   </joint>
 
   <joint name="RR_knee_joint" type="fixed" dont_collapse="true">
-    <origin rpy="0 0 0"  xyz="0 0 -0.33117571690571346"/>
+    <origin rpy="0 0 0"  xyz="0 0 -0.3260342677986043"/>
     <parent link="RR_thigh"/>
     <child link="RR_knee"/>
   </joint>
@@ -557,13 +546,13 @@
   </joint>
 
   <joint name="RR_foot_joint" type="fixed" dont_collapse="true">
-    <origin rpy="0 0 0"  xyz="0 0 -0.28255693038374063"/>
+    <origin rpy="0 0 0"  xyz="0 0 -0.2675220349037209"/>
     <parent link="RR_calf"/>
     <child link="RR_foot"/>
   </joint>
 
   <joint name="RL_hip_joint" type="revolute">
-    <origin rpy="0 0 0"  xyz="-0.20087554431490998 0.17436409388922194 -0.03704724621880318"/>
+    <origin rpy="0 0 0"  xyz="-0.34308860454049706 0.15171628482032276 -0.038178028851525284"/>
     <parent link="trunk"/>
     <child link="RL_hip"/>
     <axis xyz="1 0 0"/>
@@ -581,7 +570,7 @@
   </joint>
 
   <joint name="RL_knee_joint" type="fixed" dont_collapse="true">
-    <origin rpy="0 0 0"  xyz="0 0 -0.33117571690571346"/>
+    <origin rpy="0 0 0"  xyz="0 0 -0.3260342677986043"/>
     <parent link="RL_thigh"/>
     <child link="RL_knee"/>
   </joint>
@@ -596,7 +585,7 @@
   </joint>
 
   <joint name="RL_foot_joint" type="fixed" dont_collapse="true">
-    <origin rpy="0 0 0"  xyz="0 0 -0.28255693038374063"/>
+    <origin rpy="0 0 0"  xyz="0 0 -0.2675220349037209"/>
     <parent link="RL_calf"/>
     <child link="RL_foot"/>
   </joint>
